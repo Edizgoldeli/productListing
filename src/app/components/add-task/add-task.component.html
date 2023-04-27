@@ -1,0 +1,13 @@
+<form *ngIf="showAddTask" class="add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="text"> Product </label>
+        <input type="text" name="text" [(ngModel)]="text" id="text" placeholder="Product Name" />
+    </div>
+    <div class="form-control">
+        <label for="prdctDetails"> Product Details </label>
+        <input type="text" name="prdctDetails" [(ngModel)]="prdctDetails" id="prdctDetails" placeholder="Product Details" />
+    </div>
+    <div class="form-control">
+        <input type="submit" value="Add Product" class="btn btn-block"/>
+    </div>
+</form> 
